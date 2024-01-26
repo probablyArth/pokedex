@@ -1,0 +1,45 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 30vw;
+}
+
+
+.flex{
+    display: flex;
+    gap: 20px;
+}
+
+.pokemon {
+    background: black;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+}
+
+#pokedex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.pokemonTypes {
+    display: flex;
+}
+
+.pokemonType {
+    background-color: green;
+    color:white;
+    border-radius: 20px;
+    display: block;
+    padding: 20px;
+}
+
+.pokemonStats {
+
+}
