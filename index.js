@@ -16,12 +16,19 @@ async function getAndPopulatePokemons() {
       <div>
         <h1>${pokemonData.name}</h1>
         <img src="${pokemonData.sprites.front_default}" height="300px"></img>
-        <div>${pokemonData.stats.forEach}</div>
-        <div class="pokemonTypes">
-            ${pokemonData.types.map((type) => {
-              return `<span class="pokemonType">${type.type.name}</span>`;
+        <div class="flex">
+            <div class="flex-col">
+            ${pokemonData.stats.map((stat) => {
+              return `<span>${stat.stat.name}: ${stat.base_stat}</span>`;
             })}
+            </div>
+            <div class="pokemonTypes">
+                ${pokemonData.types.map((type) => {
+                  return `<span class="pokemonType">${type.type.name}</span>`;
+                })}
+            </div>
         </div>
+        
       </div>
       `;
     });
